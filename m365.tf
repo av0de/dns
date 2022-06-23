@@ -10,7 +10,7 @@ resource "cloudflare_record" "SPF" {
 resource "cloudflare_record" "ms_verification" {
   zone_id = var.cloudflare_zone_id
   name    = "@"
-  value   = "MS=ms38038929"
+  value   = "MS=ms69203017"
   type    = "TXT"
   ttl     = 1
   proxied = false
@@ -28,7 +28,7 @@ resource "cloudflare_record" "dmarc" {
 resource "cloudflare_record" "slector1_domainkey" {
   zone_id = var.cloudflare_zone_id
   name    = "selector1._domainkey"
-  value   = "selector1-cedi-dev._domainkey.cedidev.onmicrosoft.com"
+  value   = "selector1-av0-de._domainkey.cedidev.onmicrosoft.com"
   type    = "CNAME"
   ttl     = 1
   proxied = false
@@ -37,7 +37,7 @@ resource "cloudflare_record" "slector1_domainkey" {
 resource "cloudflare_record" "slector2_domainkey" {
   zone_id = var.cloudflare_zone_id
   name    = "selector2._domainkey"
-  value   = "selector2-cedi-dev._domainkey.cedidev.onmicrosoft.com"
+  value   = "selector2-av0-de._domainkey.cedidev.onmicrosoft.com"
   type    = "CNAME"
   ttl     = 1
   proxied = false
@@ -73,7 +73,7 @@ resource "cloudflare_record" "enterpriseregistration" {
 resource "cloudflare_record" "MX" {
   zone_id  = var.cloudflare_zone_id
   name     = "@"
-  value    = "cedi-dev.mail.protection.outlook.com"
+  value    = "av0-de.mail.protection.outlook.com"
   priority = 0
   type     = "MX"
   ttl      = 1
