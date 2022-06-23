@@ -11,7 +11,7 @@ terraform {
     organization = "cedi"
 
     workspaces {
-      name = "dns-cedi-dev"
+      name = "dns-av0-de"
     }
   }
 }
